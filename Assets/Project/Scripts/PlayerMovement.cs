@@ -27,10 +27,6 @@ public class PlayerMovement : MonoBehaviour
     {
 
     }
-    void Slowed()
-    {
-
-    }
 
     #endregion
 
@@ -42,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         //Desactiva La Vista Alta
-        camara1.SetActive(false);
+        camaraArriba.SetActive(false);
         //Desactiva El Bool que comprueba si se puede usar la Vista Alta
         vistaArriba = false;
     }
@@ -53,7 +49,8 @@ public class PlayerMovement : MonoBehaviour
         //Si le das a la tecla K usas Vista Alta
         if (Input.GetKeyDown(KeyCode.K) && vistaArriba == false)
         {
-            camara1.SetActive(true);
+            camaraArriba.SetActive(true);
+            camaraNormal.SetActive(false);
             Time.timeScale = 0;
             vistaArriba = true;
         }
@@ -61,7 +58,8 @@ public class PlayerMovement : MonoBehaviour
         //Si le das al ESCAPE te vas de la vista alta
         if (Input.GetKeyDown(KeyCode.Escape) && vistaArriba == true)
         {
-            camara1.SetActive(false);
+            camaraArriba.SetActive(false);
+            camaraNormal.SetActive(true);
             Time.timeScale = 1;
             vistaArriba = false;
         }
@@ -74,7 +72,8 @@ public class PlayerMovement : MonoBehaviour
 
     #region Handles CameraChange
     [Header("Las Dos Camaras")]
-    [SerializeField] GameObject camara1;
+    [SerializeField] GameObject camaraArriba;
+    [SerializeField] GameObject camaraNormal;
 
     [Header("Saber Si la Vista Parcial esta activa")]
     [SerializeField] bool vistaArriba;
