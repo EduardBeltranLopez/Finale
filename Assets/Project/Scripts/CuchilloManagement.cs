@@ -5,12 +5,7 @@ using UnityEngine.UI;
 
 public class CuchilloManagement : MonoBehaviour
 {
-    [Header("Cuchillos Count")]
-    [SerializeField] GameObject[] cuchillo;
-    [SerializeField] GameObject carcasa;
-    [SerializeField] bool abierto;
-    [SerializeField] int numero;
-
+    
 
     private void Start()
     {
@@ -23,29 +18,17 @@ public class CuchilloManagement : MonoBehaviour
         OpenCase();
 
         //Llamo la funcion de abajo para que se realice
-        CountThrow();
-    }
-
-
-    void CountThrow()
-    {
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            //cuchillos[numero--].SetActive(false);
-
-
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            //cuchillos[numero].SetActive(true);
-
-        }
-
-
+        ShootKnive();
 
     }
 
+
+    #region Handles CasilleraOpen
+    [Header("Cuchillos Count")]
+    [SerializeField] GameObject cuchillo;
+    public bool cuchilloFuera = false;
+    [SerializeField] GameObject carcasa;
+    [SerializeField] bool abierto;
 
     void OpenCase()
     {
@@ -61,8 +44,8 @@ public class CuchilloManagement : MonoBehaviour
             //Activo la carcasa
             carcasa.SetActive(true);
 
-            //Activo los cuchillos
-            cuchillo[numero].SetActive(true);
+
+            CuchilloEsta();
         }
 
         //Si la variable abierto es verdadera y le das al escape cierras la carcasa
@@ -75,14 +58,34 @@ public class CuchilloManagement : MonoBehaviour
             Time.timeScale = 1;
 
             //Desactivo la carcasa
-            carcasa.SetActive(false);   
-
-            //Desactivo los cuchillos
-            cuchillo[numero ].SetActive(false);
-
+            carcasa.SetActive(false);
         }
     }
 
+    void CuchilloEsta()
+    {
+        if(cuchilloFuera == false) { cuchillo.SetActive(true); }
+        else { cuchillo.SetActive(false); }
+    }
+    #endregion
+
+    #region Handles Shoot
+    [Header("BulletInstantiate")]
+    [SerializeField] Transform shootPoint;
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] int bulletSpeed;
 
 
+    void ShootKnive()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && cuchilloFuera == false)
+        {
+            cuchilloFuera = true;
+            GameObject bulletInstant = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+
+            bulletInstant.GetComponent<Rigidbody>().AddForce(shootPoint.forward * bulletSpeed);
+        }
+    }
+
+    #endregion
 }
