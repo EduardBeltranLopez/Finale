@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "9007b52f-7c53-4ed3-8d98-1e63d2d7a2f8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -50,7 +59,7 @@
                 {
                     "name": "up",
                     "id": "a796b0bf-61dd-4bcb-b119-79216a580fe0",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -61,7 +70,7 @@
                 {
                     "name": "down",
                     "id": "7b80495b-52f3-45cd-acdd-bc56dab98581",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -72,7 +81,7 @@
                 {
                     "name": "right",
                     "id": "f377508b-48f2-4bbc-bff8-5fd6feb89711",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -83,13 +92,24 @@
                 {
                     "name": "left",
                     "id": "09e25385-df01-458b-bbec-38962e54e23c",
-                    "path": "<Keyboard>/d",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ef7d5f0c-2522-42e5-ba6d-fbe1a85bd373",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

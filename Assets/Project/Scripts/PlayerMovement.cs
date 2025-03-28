@@ -7,25 +7,41 @@ public class PlayerMovement : MonoBehaviour
 {
     #region Handles Movment
     [Header("GetComponents")]
-    private PlayerInput playerInput;
-    private InputAction actionMove;
+    public Rigidbody rb;
+    public GameObject camHolder;
 
-    [Header("ValoresDelPlayer")]
-    [SerializeField] float speed;
-    [SerializeField] float crouchForce;
+    public float speed;
+    public float sensitivity;
+    public float maxForce;
+    private Vector2 move, look;
 
+    public float lookRotation;
+    public float lookTop = 45;
+    public float lookBottom = -45;
 
-    
-
-    public void Movement()
+    public void OnMove(InputAction.CallbackContext context)
     {
-        Vector2 direction = actionMove.ReadValue<Vector2>();
-        transform.position += new Vector3(direction.x * speed, 0, direction.y  * speed) * Time.deltaTime;
+        move = context.ReadValue<Vector2>();
     }
 
-    void Crouch()
+    public void OnLook(InputAction.CallbackContext context)
+    {
+        look = context.ReadValue<Vector2>();
+    }
+
+    void Move()
     {
 
+        Vector3 currentVeloity = rb.velocity;
+        Vector3 targetVelocity = new Vector3(move.x, 0, move.y);
+        targetVelocity *= speed;
+
+        targetVelocity = transform.TransformDirection(targetVelocity);
+
+        Vector3 velocityChange = (targetVelocity - currentVeloity);
+
+        Vector3.ClampMagnitude(velocityChange, maxForce);
+        rb.AddForce(velocityChange, ForceMode.VelocityChange);
     }
 
     #endregion
@@ -33,16 +49,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        playerInput = GetComponent<PlayerInput>();
-        actionMove = playerInput.actions.FindAction("Move");
-
+        Cursor.lockState = CursorLockMode.Locked;
 
         //Desactiva La Vista Alta
         camaraArriba.SetActive(false);
         //Desactiva El Bool que comprueba si se puede usar la Vista Alta
         vistaArriba = false;
     }
-
     void Update()
     {
 
@@ -64,10 +77,17 @@ public class PlayerMovement : MonoBehaviour
             vistaArriba = false;
         }
     }
-
     private void FixedUpdate()
     {
-        Movement();
+        Move();
+    }
+    private void LateUpdate()
+    {
+        transform.Rotate(Vector3.up * look.x * sensitivity);
+
+        lookRotation += (-look.y * sensitivity);
+        lookRotation = Mathf.Clamp(lookRotation, lookBottom, lookTop);
+        camHolder.transform.eulerAngles = new Vector3(lookRotation, camHolder.transform.eulerAngles.y, camHolder.transform.eulerAngles.z);
     }
 
     #region Handles CameraChange
