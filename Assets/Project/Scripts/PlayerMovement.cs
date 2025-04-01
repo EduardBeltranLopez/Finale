@@ -46,7 +46,6 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
 
-
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
