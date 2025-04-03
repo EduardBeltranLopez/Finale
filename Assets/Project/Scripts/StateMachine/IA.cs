@@ -24,4 +24,12 @@ public class IA : MonoBehaviour
     {
         currentState = currentState.Process();
     }
+
+    void OnDrawGizmos()
+{
+    if (currentState != null)
+    {
+        currentState.OnDrawGizmos();
+    }
+}
 }

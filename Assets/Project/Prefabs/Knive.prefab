@@ -54,8 +54,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9488464, y: 0.920141, z: 2}
+  m_Center: {x: 0.016674787, y: 0.018432021, z: 0}
 --- !u!54 &-3596060670431801974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366561184644424165}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -95,7 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 785d3bfaeafe09e4c9fb24ae08ac9897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cuchilloManagement: {fileID: 0}
 --- !u!1 &5097784612736430301
 GameObject:
   m_ObjectHideFlags: 0
