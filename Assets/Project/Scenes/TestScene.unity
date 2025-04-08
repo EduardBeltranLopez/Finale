@@ -208,9 +208,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knive
       objectReference: {fileID: 0}
+    - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4842259143052232396, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842259143052232396, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4771
       objectReference: {fileID: 0}
     - target: {fileID: 4842259143052232396, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -294,12 +302,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227382826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.49999988, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1210022331}
+  m_Father: {fileID: 1297073963}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &230111387
@@ -2845,7 +2853,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1297073963}
-  - {fileID: 227382827}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2960,7 +2967,7 @@ MonoBehaviour:
   sensitivity: 0.1
   maxForce: 1
   lookRotation: 5
-  lookTop: 45
+  lookTop: 75
   lookBottom: -45
   camaraArriba: {fileID: 1329497371}
   camaraNormal: {fileID: 963194225}
@@ -3118,6 +3125,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 963194228}
+  - {fileID: 227382827}
   m_Father: {fileID: 1210022331}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

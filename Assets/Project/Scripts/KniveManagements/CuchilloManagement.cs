@@ -20,6 +20,8 @@ public class CuchilloManagement : MonoBehaviour
         //Llamo la funcion de abajo para que se realice
         ShootKnive();
 
+
+
     }
 
 
@@ -76,6 +78,8 @@ public class CuchilloManagement : MonoBehaviour
     [SerializeField] int bulletSpeed;
 
 
+
+
     void ShootKnive()
     {
         if (Input.GetKeyDown(KeyCode.Q) && cuchilloFuera == false)
@@ -88,10 +92,6 @@ public class CuchilloManagement : MonoBehaviour
     }
 
 
-    void NewKnive()
-    {
-
-    }
 
     #endregion
 }
