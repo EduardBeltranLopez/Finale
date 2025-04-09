@@ -26,10 +26,10 @@ public class IA : MonoBehaviour
     }
 
     void OnDrawGizmos()
-{
-    if (currentState != null)
     {
+        if (currentState != null)
+        {
         currentState.OnDrawGizmos();
+        }
     }
-}
 }

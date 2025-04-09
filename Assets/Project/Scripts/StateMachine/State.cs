@@ -85,7 +85,16 @@ public class State
 
         if (direction.magnitude < vistDist && angle < visAngle)
         {
-            return true;
+            Ray ray = new Ray(npc.transform.position + Vector3.up, direction.normalized);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, vistDist, ~0))
+            {
+                if (hit.transform == player)
+                {
+                    return true;
+                }
+            }
         }
         return false;
     }
@@ -196,6 +205,10 @@ public class Patrol : State
 #region Handles Persue
 public class Pursue : State
 {
+    float lostPlayerTimer = 0f;
+    float lostPlayerDuration = 3f;
+    bool playerLost = false;
+
     public Pursue(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player)
                 : base(_npc, _agent, _anim, _player)
     {
@@ -206,25 +219,43 @@ public class Pursue : State
 
     public override void Enter()
     {
+        lostPlayerTimer = 0f;
+        playerLost = false;
         base.Enter();
     }
 
     public override void Update()
     {
         agent.SetDestination(player.position);
-        if (agent.hasPath)
+
+        if (CanSeePlayer())
         {
+            playerLost = false;
+            lostPlayerTimer = 0f;
+
             if (CanAttackPlayer())
             {
                 nextState = new Attack(npc, agent, anim, player);
                 stage = EVENT.EXIT;
             }
-            else if (!CanSeePlayer())
+        }
+        else
+        {
+            if (!playerLost)
+            {
+                playerLost = true;
+                lostPlayerTimer = 0f;
+            }
+
+            lostPlayerTimer += Time.deltaTime;
+
+            if (lostPlayerTimer >= lostPlayerDuration)
             {
                 nextState = new Patrol(npc, agent, anim, player);
                 stage = EVENT.EXIT;
             }
         }
+
         base.Update();
     }
 
