@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 601329268}
   - component: {fileID: 601329267}
   - component: {fileID: 601329266}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1097,7 +1097,7 @@ GameObject:
   - component: {fileID: 626545941}
   - component: {fileID: 626545940}
   - component: {fileID: 626545939}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1112,7 +1112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626545937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.64, y: 0.25, z: -23.38}
+  m_LocalPosition: {x: 6.64, y: 1.75, z: -23.38}
   m_LocalScale: {x: 6.4455943, y: 11.505267, z: 8.869548}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1134,7 +1134,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1533,7 +1533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718745325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: --Buildings--
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2146,7 +2146,7 @@ GameObject:
   - component: {fileID: 1064881033}
   - component: {fileID: 1064881032}
   - component: {fileID: 1064881031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2639,6 +2639,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127004193}
   m_CullTransparentMesh: 1
+--- !u!1 &1170398344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1170398345}
+  m_Layer: 0
+  m_Name: RaycastRefer
+  m_TagString: Untagged
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1170398345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170398344}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.0300001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1297073963}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1205841132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,7 +2913,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1210022335}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnCrouch
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b9b0e591-5150-41e4-9a68-8e44da9d8fe0
     m_ActionName: Player/Crouch[/Keyboard/c]
   - m_PersistentCalls:
@@ -2931,8 +2974,8 @@ Rigidbody:
   m_GameObject: {fileID: 1210022327}
   serializedVersion: 4
   m_Mass: 3
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2964,11 +3007,20 @@ MonoBehaviour:
   rb: {fileID: 1210022334}
   camHolder: {fileID: 1297073962}
   speed: 3
+  saveSpeed: 0
   sensitivity: 0.1
   maxForce: 1
   lookRotation: 5
   lookTop: 45
   lookBottom: -25
+  isCrouching: 0
+  playerCamera: {fileID: 1297073962}
+  playerHeadRayOrigin: {fileID: 1170398344}
+  playerRayDistance: 1
+  hasCeilingUp: 0
+  ceilingMask:
+    serializedVersion: 2
+    m_Bits: 8
   camaraArriba: {fileID: 1329497371}
   camaraNormal: {fileID: 963194225}
   vistaArriba: 0
@@ -3126,6 +3178,7 @@ Transform:
   m_Children:
   - {fileID: 963194228}
   - {fileID: 227382827}
+  - {fileID: 1170398345}
   m_Father: {fileID: 1210022331}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3803,7 +3856,7 @@ GameObject:
   - component: {fileID: 1474783261}
   - component: {fileID: 1474783260}
   - component: {fileID: 1474783259}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3908,7 +3961,7 @@ GameObject:
   - component: {fileID: 1500027813}
   - component: {fileID: 1500027812}
   - component: {fileID: 1500027811}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4124,7 +4177,7 @@ GameObject:
   - component: {fileID: 1583244949}
   - component: {fileID: 1583244948}
   - component: {fileID: 1583244947}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4262,7 +4315,7 @@ GameObject:
   - component: {fileID: 1649330514}
   - component: {fileID: 1649330513}
   - component: {fileID: 1649330512}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4276,8 +4329,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649330510}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.64, y: 0.25, z: -11.49}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.64, y: 1.75, z: -11.49}
   m_LocalScale: {x: 6.4455943, y: 11.505267, z: 6.5612874}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4404,7 +4457,7 @@ GameObject:
   - component: {fileID: 1662868776}
   - component: {fileID: 1662868775}
   - component: {fileID: 1662868774}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

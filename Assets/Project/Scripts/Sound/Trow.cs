@@ -7,6 +7,7 @@ namespace GamePlay
 {
     public class Throwable : MonoBehaviour
     {
+        [Header("Lanzar Objetos")]
         [SerializeField] UnityEvent onCollideWith = new UnityEvent();
         [SerializeField] LayerMask collisionLayerMask = ~0;
         [SerializeField] bool destroyOnCollide = false;
@@ -37,7 +38,7 @@ namespace GamePlay
             Sounds.MakeSound(sound);
         }
 
-        public void OnDrawGizmosSelected()
+        public void OnDrawGizmos()
         {
             Gizmos.color = gizmoColor;
             Gizmos.DrawSphere(transform.position, rangeSound);
