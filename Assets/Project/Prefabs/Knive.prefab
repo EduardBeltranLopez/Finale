@@ -218,7 +218,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6773619986187818619}
         m_TargetAssemblyTypeName: GamePlay.Throwable, Assembly-CSharp
-        m_MethodName: MakeAnInterestingSound
+        m_MethodName: MakeADangerousSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

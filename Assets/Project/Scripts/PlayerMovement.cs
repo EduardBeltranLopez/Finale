@@ -9,33 +9,36 @@ public class PlayerMovement : MonoBehaviour
     #region Handles Movment
     [Header("GetComponents")]
     public Rigidbody rb;
-    public GameObject camHolder;
 
     public float speed;
     public float saveSpeed;
-    public float sensitivity;
     public float maxForce;
     private Vector2 move, look, crouch;
 
-    public float lookRotation;
-    public float lookTop = 45;
-    public float lookBottom = -45;
 
     public bool isCrouching;
-    public GameObject playerCamera;
     public GameObject playerHeadRayOrigin;
     public float playerRayDistance;
     public bool hasCeilingUp;
     public LayerMask ceilingMask;
+
     #endregion
 
-    #region Handles CameraChange
-    [Header("Las Dos Camaras")]
+    #region Handles Camera
+    [Header("Las Dos Vistas")]
     [SerializeField] GameObject camaraArriba;
     [SerializeField] GameObject camaraNormal;
-
-    [Header("Saber Si la Vista Parcial esta activa")]
     [SerializeField] bool vistaArriba;
+
+
+    [Header("Cinemachine")]
+    public float moveSpeed = 5f;
+    public float mouseSensitivity = 2f;
+    public Transform cameraTransform;
+
+    public float lookUp;
+    public float lookDown;
+    float pitch = 0f;
     #endregion
 
     void Start()
@@ -79,11 +82,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void LateUpdate()
     {
-        transform.Rotate(Vector3.up * look.x * sensitivity);
-
-        lookRotation += (-look.y * sensitivity);
-        lookRotation = Mathf.Clamp(lookRotation, lookBottom, lookTop);
-        camHolder.transform.eulerAngles = new Vector3(lookRotation, camHolder.transform.eulerAngles.y, camHolder.transform.eulerAngles.z);
+        Camera();
     }
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -103,14 +102,14 @@ public class PlayerMovement : MonoBehaviour
             isCrouching = true;
             speed = speed /  2;
             transform.localScale = new Vector3(1, 0.5f, 1);
-            playerCamera.transform.localPosition = new Vector3(0, -0.9f, 0);
+            cameraTransform.transform.localPosition = new Vector3(0, -0.4f, 0);
         }
         else if (context.canceled && hasCeilingUp == false)
         {
             isCrouching = false;
             speed = saveSpeed;
             transform.localScale = new Vector3(1, 1, 1);
-            playerCamera.transform.localPosition = new Vector3(0, 0, 0);
+            cameraTransform.localPosition = new Vector3(0, 0.6f, 0);
         }
     }
 
@@ -124,12 +123,12 @@ public class PlayerMovement : MonoBehaviour
         if (Physics.Raycast(ray, out hit, playerRayDistance, ceilingMask))
         {
             hasCeilingUp = true;
-            Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.red);
+            //Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.red);
         }
         else
         {
             hasCeilingUp = false;
-            Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.green);
+            //Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.green);
 
         }
 
@@ -145,6 +144,14 @@ public class PlayerMovement : MonoBehaviour
 
         velocityChange = Vector3.ClampMagnitude(velocityChange, maxForce);
         rb.AddForce(velocityChange, ForceMode.VelocityChange);
+    }
+
+    void Camera()
+    {
+        transform.Rotate(Vector3.up * look.x * mouseSensitivity);
+        pitch -= look.y * mouseSensitivity;
+        pitch = Mathf.Clamp(pitch, lookDown, lookUp);
+        cameraTransform.localEulerAngles = new Vector3(pitch, 0f, 0f);
     }
 
 

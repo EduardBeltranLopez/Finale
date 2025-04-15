@@ -85,7 +85,7 @@ public class State
 
         if (direction.magnitude < vistDist && angle < visAngle)
         {
-            Ray ray = new Ray(npc.transform.position + Vector3.up, direction.normalized);
+            Ray ray = new Ray(npc.transform.position, direction.normalized);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, vistDist, ~0))
