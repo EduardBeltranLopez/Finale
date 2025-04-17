@@ -123,12 +123,12 @@ public class PlayerMovement : MonoBehaviour
         if (Physics.Raycast(ray, out hit, playerRayDistance, ceilingMask))
         {
             hasCeilingUp = true;
-            //Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.red);
+            Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.red);
         }
         else
         {
             hasCeilingUp = false;
-            //Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.green);
+            Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.green);
 
         }
 

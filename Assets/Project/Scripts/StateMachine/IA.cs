@@ -10,6 +10,7 @@ public class IA : MonoBehaviour
     Animator animator;
     public Transform player;
     State currentState;
+    //public static GameObject[] gameObjects;
 
     // Start is called before the first frame update
     void Start()
