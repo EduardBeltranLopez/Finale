@@ -10,14 +10,17 @@ public class IA : MonoBehaviour
     Animator animator;
     public Transform player;
     State currentState;
-    //public static GameObject[] gameObjects;
+
+
+
+    public GameObject[] check;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = this.GetComponent<NavMeshAgent>();
         animator = this.GetComponent<Animator>();
-        currentState = new Iddle(this.gameObject, agent, animator, player);
+        currentState = new Iddle(this.gameObject, agent, animator, player, check);
     }
 
     // Update is called once per frame

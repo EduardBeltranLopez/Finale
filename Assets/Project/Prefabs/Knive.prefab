@@ -218,7 +218,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6773619986187818619}
         m_TargetAssemblyTypeName: GamePlay.Throwable, Assembly-CSharp
-        m_MethodName: MakeADangerousSound
+        m_MethodName: MakeAnInterestingSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -233,4 +233,4 @@ MonoBehaviour:
     m_Bits: 4294967295
   destroyOnCollide: 0
   gizmoColor: {r: 0, g: 0.4995098, b: 1, a: 1}
-  rangeSound: 10
+  rangeSound: 20
