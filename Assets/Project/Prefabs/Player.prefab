@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 6376278600737909238}
   - component: {fileID: 6914042347473881644}
   - component: {fileID: 7034130530506112509}
+  - component: {fileID: 8069205881056328933}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -371,7 +372,7 @@ Transform:
   - {fileID: 1107049257838310101}
   - {fileID: 8861071723660814156}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &8869171953641702725
 MeshFilter:
@@ -574,9 +575,6 @@ MonoBehaviour:
   ceilingMask:
     serializedVersion: 2
     m_Bits: 8
-  camaraArriba: {fileID: 0}
-  camaraNormal: {fileID: 0}
-  vistaArriba: 0
   moveSpeed: 5
   mouseSensitivity: 0.1
   cameraTransform: {fileID: 5470160854802542035}
@@ -601,3 +599,21 @@ MonoBehaviour:
   shootPoint: {fileID: 6591546647772396895}
   bulletPrefab: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
   bulletSpeed: 500
+--- !u!114 &8069205881056328933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071134350370241819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41067f0ab4fda5c468d0c741b9f6a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasHolder: {fileID: 0}
+  camarasArriba: []
+  currentCamaraArriba: 0
+  camaraNormal: {fileID: 0}
+  vistaArriba: 0
+  playerMovement: {fileID: 0}

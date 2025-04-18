@@ -25,12 +25,6 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     #region Handles Camera
-    [Header("Las Dos Vistas")]
-    [SerializeField] GameObject camaraArriba;
-    [SerializeField] GameObject camaraNormal;
-    [SerializeField] bool vistaArriba;
-
-
     [Header("Cinemachine")]
     public float moveSpeed = 5f;
     public float mouseSensitivity = 2f;
@@ -44,34 +38,10 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-
-        //Desactiva La Vista Alta
-        camaraArriba.SetActive(false);
-        //Desactiva El Bool que comprueba si se puede usar la Vista Alta
-        vistaArriba = false;
-
         saveSpeed = speed;
     }
     void Update()
     {
-
-        //Si le das a la tecla K usas Vista Alta
-        if (Input.GetKeyDown(KeyCode.K) && vistaArriba == false)
-        {
-            camaraArriba.SetActive(true);
-            camaraNormal.SetActive(false);
-            speed = 0;
-            vistaArriba = true;
-        }
-
-        //Si le das al ESCAPE te vas de la vista alta
-        if (Input.GetKeyDown(KeyCode.Escape) && vistaArriba == true)
-        {
-            camaraArriba.SetActive(false);
-            camaraNormal.SetActive(true);
-            speed = saveSpeed;
-            vistaArriba = false;
-        }
 
         CheckCeilingAbove();
 
