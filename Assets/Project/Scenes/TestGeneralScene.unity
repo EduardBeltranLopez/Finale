@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 64535499}
   - component: {fileID: 64535501}
   - component: {fileID: 64535500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -954,9 +954,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1826099305}
     m_Modifications:
+    - target: {fileID: 1705129010167144, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_Name
       value: Knive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_TagString
@@ -1022,11 +1030,6 @@ PrefabInstance:
 --- !u!4 &74670712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4842259143052232396, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
-  m_PrefabInstance: {fileID: 74670711}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &74670713 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
   m_PrefabInstance: {fileID: 74670711}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &76080542
@@ -1747,9 +1750,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 542585519}
     m_Modifications:
+    - target: {fileID: 1705129010167144, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_Name
       value: Knive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_TagString
@@ -1815,11 +1826,6 @@ PrefabInstance:
 --- !u!4 &185698919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4842259143052232396, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
-  m_PrefabInstance: {fileID: 185698918}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &185698920 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
   m_PrefabInstance: {fileID: 185698918}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &190447145
@@ -2335,7 +2341,7 @@ GameObject:
   - component: {fileID: 212283838}
   - component: {fileID: 212283840}
   - component: {fileID: 212283839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2609,7 +2615,7 @@ GameObject:
   - component: {fileID: 216245630}
   - component: {fileID: 216245629}
   - component: {fileID: 216245628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2842,6 +2848,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262751766}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &263221195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5470160854802542035, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+  m_PrefabInstance: {fileID: 1039414887880851197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &270336618
 GameObject:
   m_ObjectHideFlags: 0
@@ -3566,9 +3577,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2115253467}
     m_Modifications:
+    - target: {fileID: 1705129010167144, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_Name
       value: Knive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_TagString
@@ -3636,11 +3655,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4842259143052232396, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
   m_PrefabInstance: {fileID: 340669390}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &340669392 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
-  m_PrefabInstance: {fileID: 340669390}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &341535250
 GameObject:
   m_ObjectHideFlags: 0
@@ -3652,7 +3666,7 @@ GameObject:
   - component: {fileID: 341535251}
   - component: {fileID: 341535253}
   - component: {fileID: 341535252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5188,7 +5202,7 @@ GameObject:
   - component: {fileID: 542585524}
   - component: {fileID: 542585525}
   - component: {fileID: 542585523}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5277,9 +5291,6 @@ MonoBehaviour:
   player: {fileID: 1210022327}
   popUp: {fileID: 668787865}
   canvas: {fileID: 1089095124}
-  cuchilloManagement: {fileID: 1210022336}
-  newKnife: {fileID: 185698920}
-  knifeOnTop: 1
 --- !u!65 &542585524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6221,7 +6232,7 @@ GameObject:
   - component: {fileID: 668787866}
   - component: {fileID: 668787868}
   - component: {fileID: 668787867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7083,9 +7094,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1193972768}
     m_Modifications:
+    - target: {fileID: 1705129010167144, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_Name
       value: Knive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_TagString
@@ -7151,11 +7170,6 @@ PrefabInstance:
 --- !u!4 &753549895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4842259143052232396, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
-  m_PrefabInstance: {fileID: 753549894}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &753549896 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
   m_PrefabInstance: {fileID: 753549894}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &757445695
@@ -7361,37 +7375,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760433234}
   m_CullTransparentMesh: 1
---- !u!1 &763687498
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 763687499}
-  m_Layer: 0
-  m_Name: Managers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &763687499
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763687498}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.402443, y: -5.0976725, z: 52.97529}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &771412013
 GameObject:
   m_ObjectHideFlags: 0
@@ -7933,7 +7916,7 @@ GameObject:
   - component: {fileID: 872740450}
   - component: {fileID: 872740449}
   - component: {fileID: 872740448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7972,9 +7955,6 @@ MonoBehaviour:
   player: {fileID: 1210022327}
   popUp: {fileID: 341535250}
   canvas: {fileID: 1432942352}
-  cuchilloManagement: {fileID: 1210022336}
-  newKnife: {fileID: 1297890449}
-  knifeOnTop: 1
 --- !u!65 &872740449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9351,7 +9331,7 @@ GameObject:
   - component: {fileID: 1029084227}
   - component: {fileID: 1029084226}
   - component: {fileID: 1029084225}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9829,7 +9809,7 @@ GameObject:
   - component: {fileID: 1077572873}
   - component: {fileID: 1077572875}
   - component: {fileID: 1077572874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10073,7 +10053,7 @@ GameObject:
   - component: {fileID: 1089095128}
   - component: {fileID: 1089095127}
   - component: {fileID: 1089095126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10636,7 +10616,7 @@ GameObject:
   - component: {fileID: 1193972771}
   - component: {fileID: 1193972770}
   - component: {fileID: 1193972769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10675,9 +10655,6 @@ MonoBehaviour:
   player: {fileID: 1210022327}
   popUp: {fileID: 212283837}
   canvas: {fileID: 216245626}
-  cuchilloManagement: {fileID: 1210022336}
-  newKnife: {fileID: 753549896}
-  knifeOnTop: 1
 --- !u!65 &1193972770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11698,9 +11675,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 872740447}
     m_Modifications:
+    - target: {fileID: 1705129010167144, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_Name
       value: Knive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
       propertyPath: m_TagString
@@ -12921,7 +12906,7 @@ GameObject:
   - component: {fileID: 1432942356}
   - component: {fileID: 1432942355}
   - component: {fileID: 1432942354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16004,7 +15989,7 @@ GameObject:
   - component: {fileID: 1826099308}
   - component: {fileID: 1826099307}
   - component: {fileID: 1826099306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16043,9 +16028,6 @@ MonoBehaviour:
   player: {fileID: 1210022327}
   popUp: {fileID: 64535498}
   canvas: {fileID: 1962970821}
-  cuchilloManagement: {fileID: 1210022336}
-  newKnife: {fileID: 74670713}
-  knifeOnTop: 1
 --- !u!65 &1826099307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17097,7 +17079,7 @@ GameObject:
   - component: {fileID: 1962970825}
   - component: {fileID: 1962970824}
   - component: {fileID: 1962970823}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18330,7 +18312,7 @@ GameObject:
   - component: {fileID: 2115253470}
   - component: {fileID: 2115253469}
   - component: {fileID: 2115253468}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18369,9 +18351,6 @@ MonoBehaviour:
   player: {fileID: 1210022327}
   popUp: {fileID: 1077572872}
   canvas: {fileID: 1029084223}
-  cuchilloManagement: {fileID: 1210022336}
-  newKnife: {fileID: 340669392}
-  knifeOnTop: 1
 --- !u!65 &2115253469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18833,6 +18812,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6914042347473881644, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: lookUpStand
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914042347473881644, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: camaraArriba
       value: 
       objectReference: {fileID: 1382718831}
@@ -18840,14 +18823,38 @@ PrefabInstance:
       propertyPath: camaraNormal
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 6914042347473881644, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: lookUpCrouch
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: carcasa
       value: 
       objectReference: {fileID: 1660419520}
     - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: pointer
+      value: 
+      objectReference: {fileID: 263221195}
+    - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: cuchillo
       value: 
       objectReference: {fileID: 76080542}
+    - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: newKnife
+      value: 
+      objectReference: {fileID: 1297890449}
+    - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: canMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: cuchilloManagement
+      value: 
+      objectReference: {fileID: 1210022336}
+    - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: interactionDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8069205881056328933, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: camaraNormal
       value: 

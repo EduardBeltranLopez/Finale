@@ -29,19 +29,22 @@ public class PlayerMovement : MonoBehaviour
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
 
-    public float lookUp;
+    public float lookCurrentUp;
+    public float lookUpStand;
+    public float lookUpCrouch;
     public float lookDown;
     float pitch = 0f;
     #endregion
+
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         saveSpeed = speed;
+        lookCurrentUp = lookUpStand;
     }
     void Update()
     {
-
         CheckCeilingAbove();
 
     }
@@ -72,6 +75,8 @@ public class PlayerMovement : MonoBehaviour
             speed = speed /  2;
             transform.localScale = new Vector3(1, 0.5f, 1);
             cameraTransform.transform.localPosition = new Vector3(0, -0.4f, 0);
+
+            lookCurrentUp = lookUpCrouch;
         }
         else if (context.canceled && hasCeilingUp == false)
         {
@@ -79,6 +84,8 @@ public class PlayerMovement : MonoBehaviour
             speed = saveSpeed;
             transform.localScale = new Vector3(1, 1, 1);
             cameraTransform.localPosition = new Vector3(0, 0.6f, 0);
+
+            lookCurrentUp = lookUpStand;
         }
     }
 
@@ -119,12 +126,12 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Rotate(Vector3.up * look.x * mouseSensitivity);
         pitch -= look.y * mouseSensitivity;
-        pitch = Mathf.Clamp(pitch, lookDown, lookUp);
+        pitch = Mathf.Clamp(pitch, lookDown, lookCurrentUp);
         cameraTransform.localEulerAngles = new Vector3(pitch, 0f, 0f);
     }
 
-
-
+    
 }
+
 
 

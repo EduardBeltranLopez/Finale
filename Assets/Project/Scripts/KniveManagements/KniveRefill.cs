@@ -22,7 +22,7 @@ public class KniveRefill : MonoBehaviour
             popUp.SetActive(true);
         }
 
-        NewKnive();
+
     }
     private void OnTriggerExit(Collider other)
     {
@@ -42,38 +42,11 @@ public class KniveRefill : MonoBehaviour
 
     void FollowPlayer()
     {
-            canvas.transform.rotation = player.transform.rotation;
+        canvas.transform.rotation = player.transform.rotation;
     }
 
     #endregion
-
-    #region Handles PlayerRefillKnife
-
-    [Header("NeedToNewKnive")]
-    [SerializeField] CuchilloManagement cuchilloManagement;
-    [SerializeField] GameObject newKnife;
-    [SerializeField] bool knifeOnTop = true;
-
-
-    void NewKnive()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && knifeOnTop == true) 
-        {
-            if (cuchilloManagement.cuchilloFuera == false)
-            {
-                Debug.Log("YaEstasLleno");
-            }
-            else if(cuchilloManagement.cuchilloFuera == true && knifeOnTop == true)
-            {
-                cuchilloManagement.cuchilloFuera = false;
-                newKnife.SetActive(false);
-                knifeOnTop = false;
-            }
-        }
-            
-    }
-
-    #endregion
-
-
 }
+
+
+

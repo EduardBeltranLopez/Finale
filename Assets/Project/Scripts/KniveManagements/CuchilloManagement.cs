@@ -9,17 +9,13 @@ public class CuchilloManagement : MonoBehaviour
 
     private void Start()
     {
-        //Al empezar el juego desactivo la carcasa
         carcasa.SetActive(false);
     }
     private void Update()
     {
-        //Llamo la funcion de abajo para que se realice
         OpenCase();
-
-        //Llamo la funcion de abajo para que se realice
         ShootKnive();
-
+        NewPickUpKnive();
 
 
     }
@@ -33,32 +29,20 @@ public class CuchilloManagement : MonoBehaviour
 
     void OpenCase()
     {
-        //Si la variable abierto es falsa y le das a la tecla I abres la carcasa
         if (Input.GetKeyDown(KeyCode.I) && abierto == false)
         {
-            //Cambio la variable
             abierto = true;
-
-            //Hago que el tiempo del juego no se mueva
             Time.timeScale = 0;
-
-            //Activo la carcasa
             carcasa.SetActive(true);
 
 
             CuchilloEsta();
         }
 
-        //Si la variable abierto es verdadera y le das al escape cierras la carcasa
         if (Input.GetKeyDown(KeyCode.Escape) && abierto == true)
         {
-            //Cambio la variable
             abierto = false;
-
-            //Hago que el tiempo del juego fluya de normal
             Time.timeScale = 1;
-
-            //Desactivo la carcasa
             carcasa.SetActive(false);
         }
     }
@@ -93,5 +77,46 @@ public class CuchilloManagement : MonoBehaviour
 
 
 
+    #endregion
+
+
+    #region Handles PlayerRefillKnife
+    [Header("NeedToNewKnive")]
+    [SerializeField] CuchilloManagement cuchilloManagement;
+    [SerializeField] GameObject newKnife;
+    [SerializeField] bool knifeOnTop = true;
+
+    [Header("RaycastCosas")]
+    [SerializeField] float interactionDistance;
+    [SerializeField] public LayerMask canMask;
+    [SerializeField] Transform pointer;
+
+    void NewPickUpKnive()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Ray ray = new Ray(pointer.position, Vector3.forward);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, interactionDistance, canMask))
+            {
+                if (cuchilloManagement.cuchilloFuera == false)
+                {
+                    Debug.Log("YaEstasLleno");
+                }
+            }
+            else if (cuchilloManagement.cuchilloFuera == true && knifeOnTop == true)
+            {
+                cuchilloManagement.cuchilloFuera = false;
+                newKnife.SetActive(false);
+                knifeOnTop = false;
+            }
+        }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawRay(pointer.transform.position, pointer.forward * interactionDistance);
+    }
     #endregion
 }

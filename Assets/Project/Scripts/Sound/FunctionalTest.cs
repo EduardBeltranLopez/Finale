@@ -15,7 +15,10 @@ public class FunctionalAdult : MonoBehaviour, IHear
     void Awake()
     {
         if (agent == null && !TryGetComponent(out agent))
+        {
             Debug.LogWarning(name + " doesn't have an agent!");
+        }
+            
     }
 
     public void RespondToSound(Sound sound)
