@@ -2615,7 +2615,7 @@ GameObject:
   - component: {fileID: 216245630}
   - component: {fileID: 216245629}
   - component: {fileID: 216245628}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5202,7 +5202,7 @@ GameObject:
   - component: {fileID: 542585524}
   - component: {fileID: 542585525}
   - component: {fileID: 542585523}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7916,7 +7916,7 @@ GameObject:
   - component: {fileID: 872740450}
   - component: {fileID: 872740449}
   - component: {fileID: 872740448}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9331,7 +9331,7 @@ GameObject:
   - component: {fileID: 1029084227}
   - component: {fileID: 1029084226}
   - component: {fileID: 1029084225}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10053,7 +10053,7 @@ GameObject:
   - component: {fileID: 1089095128}
   - component: {fileID: 1089095127}
   - component: {fileID: 1089095126}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10616,7 +10616,7 @@ GameObject:
   - component: {fileID: 1193972771}
   - component: {fileID: 1193972770}
   - component: {fileID: 1193972769}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11751,11 +11751,6 @@ PrefabInstance:
 --- !u!4 &1297890448 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4842259143052232396, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
-  m_PrefabInstance: {fileID: 1297890447}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1297890449 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
   m_PrefabInstance: {fileID: 1297890447}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1307910001
@@ -12906,7 +12901,7 @@ GameObject:
   - component: {fileID: 1432942356}
   - component: {fileID: 1432942355}
   - component: {fileID: 1432942354}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15989,7 +15984,7 @@ GameObject:
   - component: {fileID: 1826099308}
   - component: {fileID: 1826099307}
   - component: {fileID: 1826099306}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17079,7 +17074,7 @@ GameObject:
   - component: {fileID: 1962970825}
   - component: {fileID: 1962970824}
   - component: {fileID: 1962970823}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18312,7 +18307,7 @@ GameObject:
   - component: {fileID: 2115253470}
   - component: {fileID: 2115253469}
   - component: {fileID: 2115253468}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18842,7 +18837,7 @@ PrefabInstance:
     - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: newKnife
       value: 
-      objectReference: {fileID: 1297890449}
+      objectReference: {fileID: 0}
     - target: {fileID: 7034130530506112509, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: canMask.m_Bits
       value: 64

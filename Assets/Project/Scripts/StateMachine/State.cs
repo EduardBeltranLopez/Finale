@@ -306,8 +306,8 @@ public class Attack : State
         {
 
             nextState = new Iddle(npc, agent, anim, player, checkpoints);
-            shoot.Stop();
             stage = EVENT.EXIT;
+            shoot.Stop();
         }
     }
 

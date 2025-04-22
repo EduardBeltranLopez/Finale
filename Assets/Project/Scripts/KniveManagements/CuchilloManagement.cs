@@ -81,11 +81,6 @@ public class CuchilloManagement : MonoBehaviour
 
 
     #region Handles PlayerRefillKnife
-    [Header("NeedToNewKnive")]
-    [SerializeField] CuchilloManagement cuchilloManagement;
-    [SerializeField] GameObject newKnife;
-    [SerializeField] bool knifeOnTop = true;
-
     [Header("RaycastCosas")]
     [SerializeField] float interactionDistance;
     [SerializeField] public LayerMask canMask;
@@ -95,21 +90,21 @@ public class CuchilloManagement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Ray ray = new Ray(pointer.position, Vector3.forward);
+            Ray ray = new Ray(pointer.position, pointer.forward);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, interactionDistance, canMask))
             {
-                if (cuchilloManagement.cuchilloFuera == false)
+                if (cuchilloFuera == true)
+                {
+                    Destroy(hit.collider.gameObject);
+
+                    cuchilloFuera = false;
+                }
+                else if (cuchilloFuera == false)
                 {
                     Debug.Log("YaEstasLleno");
                 }
-            }
-            else if (cuchilloManagement.cuchilloFuera == true && knifeOnTop == true)
-            {
-                cuchilloManagement.cuchilloFuera = false;
-                newKnife.SetActive(false);
-                knifeOnTop = false;
             }
         }
     }
