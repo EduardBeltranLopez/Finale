@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+
 #region Handles States
 public class State
 {
@@ -275,6 +276,7 @@ public class Attack : State
 
     float rotationSpeed = 2.0f;
     AudioSource shoot;
+    AttackStats stats;
 
     public Attack(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player, GameObject[] _checkpoints)
                 : base(_npc, _agent, _anim, _player, _checkpoints)
@@ -300,15 +302,24 @@ public class Attack : State
 
         npc.transform.rotation = Quaternion.Slerp(npc.transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * rotationSpeed);
 
-        
 
-        if (!CanAttackPlayer())
+        if (CanAttackPlayer())
+        {
+            stats.InstantShootEnemyBullet();
+
+        }
+        else if (!CanAttackPlayer())
         {
 
             nextState = new Iddle(npc, agent, anim, player, checkpoints);
             stage = EVENT.EXIT;
             shoot.Stop();
         }
+
+
+        
+    }
+    public void CONO() { 
     }
 
     public override void Exit()

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collect
   - Checkpoint
+  - Winer
   layers:
   - Default
   - TransparentFX
