@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 6914042347473881644}
   - component: {fileID: 7034130530506112509}
   - component: {fileID: 8069205881056328933}
+  - component: {fileID: 6046883282640043308}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -578,7 +579,9 @@ MonoBehaviour:
   moveSpeed: 5
   mouseSensitivity: 0.1
   cameraTransform: {fileID: 5470160854802542035}
-  lookUp: 18
+  lookCurrentUp: 0
+  lookUpStand: 0
+  lookUpCrouch: 0
   lookDown: -40
 --- !u!114 &7034130530506112509
 MonoBehaviour:
@@ -599,6 +602,11 @@ MonoBehaviour:
   shootPoint: {fileID: 6591546647772396895}
   bulletPrefab: {fileID: 1366561184644424165, guid: b5092a31e1202b44688bbae121a5216c, type: 3}
   bulletSpeed: 500
+  interactionDistance: 0
+  canMask:
+    serializedVersion: 2
+    m_Bits: 0
+  pointer: {fileID: 0}
 --- !u!114 &8069205881056328933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,4 +624,23 @@ MonoBehaviour:
   currentCamaraArriba: 0
   camaraNormal: {fileID: 0}
   vistaArriba: 0
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 6914042347473881644}
+--- !u!114 &6046883282640043308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071134350370241819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87ea7eca9747b246a8f0ea922972af0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  currentHp: 0
+  onScreenDamage: []
+  waitTimeBetweenShoot: 0
+  speedBullet: 0
+  enemyBulletPrefab: {fileID: 0}
+  shootPointEnemy: {fileID: 0}
