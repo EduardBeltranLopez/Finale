@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 6914042347473881644}
   - component: {fileID: 7034130530506112509}
   - component: {fileID: 8069205881056328933}
-  - component: {fileID: 6046883282640043308}
+  - component: {fileID: 3243951903709896420}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -625,7 +625,7 @@ MonoBehaviour:
   camaraNormal: {fileID: 0}
   vistaArriba: 0
   playerMovement: {fileID: 6914042347473881644}
---- !u!114 &6046883282640043308
+--- !u!114 &3243951903709896420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -637,10 +637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f87ea7eca9747b246a8f0ea922972af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
+  hp: 4
   currentHp: 0
   onScreenDamage: []
-  waitTimeBetweenShoot: 0
-  speedBullet: 0
-  enemyBulletPrefab: {fileID: 0}
-  shootPointEnemy: {fileID: 0}

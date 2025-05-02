@@ -276,7 +276,7 @@ public class Attack : State
 
     float rotationSpeed = 2.0f;
     AudioSource shoot;
-    AttackStats stats;
+    EnemyStats stats;
 
     public Attack(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player, GameObject[] _checkpoints)
                 : base(_npc, _agent, _anim, _player, _checkpoints)
@@ -284,6 +284,7 @@ public class Attack : State
 
         name = STATE.ATTACK;
         shoot = _npc.GetComponent<AudioSource>();
+        stats = _npc.GetComponent<EnemyStats>();
     }
 
     public override void Enter()
@@ -305,7 +306,12 @@ public class Attack : State
 
         if (CanAttackPlayer())
         {
-            stats.InstantShootEnemyBullet();
+            stats.timer += Time.deltaTime;
+            if (stats.timer > stats.waitTimeBetweenShoot)
+            {
+                stats.InstantShootEnemyBullet();
+                stats.timer = 0.0f;
+            }
 
         }
         else if (!CanAttackPlayer())
