@@ -23,7 +23,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        RespawnConRestart();
+        //RespawnConRestart();
     }
 
     void OnTriggerEnter(Collider other)
@@ -32,6 +32,11 @@ public class PlayerStats : MonoBehaviour
         {
             Destroy(other.gameObject);
             ChangeDamage();
+        }
+
+        if (other.gameObject.tag == "Res")
+        {
+            RespawnConRestart();
         }
     }
 
@@ -44,13 +49,9 @@ public class PlayerStats : MonoBehaviour
 
     void RespawnConRestart()
     {
-        if (currentHp == -1)
-        {
             onScreenDamage[0].SetActive(false);
             currentHp = hp;
             onScreenDamage[currentHp].SetActive(true);
-
-        }
     }
 }
 

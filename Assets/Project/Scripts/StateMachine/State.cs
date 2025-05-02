@@ -325,8 +325,6 @@ public class Attack : State
 
         
     }
-    public void CONO() { 
-    }
 
     public override void Exit()
     {
