@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33763495029525958}
   - component: {fileID: 23466150907217158}
   - component: {fileID: 65440559600974806}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cola Can
   m_TagString: Collect
   m_Icon: {fileID: 0}
