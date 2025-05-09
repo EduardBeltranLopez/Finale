@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnCrouch(InputAction.CallbackContext context)
     {
 
-        if (context.started)
+        if (context.started && isCrouching == false)
         {
             isCrouching = true;
             speed = speed /  2;
@@ -105,7 +105,6 @@ public class PlayerMovement : MonoBehaviour
         {
             hasCeilingUp = false;
             Debug.DrawRay(playerHeadRayOrigin.transform.position, Vector3.up * playerRayDistance, Color.green);
-
         }
 
     }

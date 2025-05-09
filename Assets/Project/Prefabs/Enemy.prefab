@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3814519585064385669}
   - component: {fileID: 2642738320094987841}
   m_Layer: 0
-  m_Name: Slow_Enemy
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 1093965574668996340}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.4, y: -10.032331, z: -11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4157994182793936967}
@@ -249,7 +249,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  check: []
+  check:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &3814519585064385669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitTimeBetweenShoot: 6
   timer: 0
-  speedBullet: 20
+  speedBullet: 2000
   enemyBulletPrefab: {fileID: 8129554063697890826, guid: 2ac384aeb3c14c24ead336fcb97918a2, type: 3}
   shootPointEnemy: {fileID: 2934377559153565639}
 --- !u!1 &3416506238046414900
