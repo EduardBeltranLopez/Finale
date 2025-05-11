@@ -6746,8 +6746,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: Pan2D
+      value: 0.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: m_Volume
+      value: 0.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.059
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9668,8 +9684,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: Pan2D
+      value: 0.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: m_Volume
+      value: 0.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.059
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12445,6 +12477,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: Pan2D
+      value: 0.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: m_Volume
+      value: 0.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.059
+      objectReference: {fileID: 0}
     - target: {fileID: 5025525943257120851, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
       propertyPath: m_Range
       value: 1.41
@@ -13352,8 +13404,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: Pan2D
+      value: 0.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: m_Volume
+      value: 0.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.059
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21560,6 +21628,26 @@ PrefabInstance:
     - target: {fileID: 4528477828364640, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: Pan2D
+      value: 0.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: m_Volume
+      value: 0.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794676761678352450, guid: bfa7e8189ab181843b9ac106678a628a, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.059
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
