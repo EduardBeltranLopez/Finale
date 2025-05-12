@@ -270,6 +270,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
   displacementFromDanger: 20
+  isEnemy: 1
+  isCitydent: 0
 --- !u!114 &2642738320094987841
 MonoBehaviour:
   m_ObjectHideFlags: 0
