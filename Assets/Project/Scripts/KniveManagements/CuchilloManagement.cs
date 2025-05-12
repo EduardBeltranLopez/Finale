@@ -26,6 +26,7 @@ public class CuchilloManagement : MonoBehaviour
     [SerializeField] GameObject cuchillo;
     [SerializeField] GameObject carcasa;
     [SerializeField] bool abierto;
+    [SerializeField] PlayerMovement playerMovement;
 
     void OpenCase()
     {
@@ -34,7 +35,8 @@ public class CuchilloManagement : MonoBehaviour
             abierto = true;
             //Time.timeScale = 0;
             carcasa.SetActive(true);
-
+            playerMovement.mouseSensitivity = 0;
+            playerMovement.speed = 0;
 
             CuchilloEsta();
         }
@@ -44,6 +46,8 @@ public class CuchilloManagement : MonoBehaviour
             abierto = false;
             //Time.timeScale = 1;
             carcasa.SetActive(false);
+            playerMovement.mouseSensitivity = 0.1f;
+            playerMovement.speed = playerMovement.saveSpeed;
         }
     }
 

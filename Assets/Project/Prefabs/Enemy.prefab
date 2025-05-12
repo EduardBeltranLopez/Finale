@@ -128,11 +128,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5b2d85558070dc446aba315ba84c8352, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.163
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -174,7 +174,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -204,7 +204,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.421
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -284,9 +284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff6c543824fb5b44aa585e9d768ddf3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimeBetweenShoot: 6
+  waitTimeBetweenShoot: 2
   timer: 0
-  speedBullet: 2000
+  speedBullet: 200
   enemyBulletPrefab: {fileID: 8129554063697890826, guid: 2ac384aeb3c14c24ead336fcb97918a2, type: 3}
   shootPointEnemy: {fileID: 2934377559153565639}
 --- !u!1 &3416506238046414900
@@ -527,7 +527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7134028311132580595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.02}
+  m_LocalPosition: {x: 0, y: -1.94, z: 4.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
