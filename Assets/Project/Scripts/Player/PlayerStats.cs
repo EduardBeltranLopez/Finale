@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour
     [Tooltip("Los UI del daño")]public GameObject[] onScreenDamage;
 
     EnemyStats enemyStats;
+    public ChangeScene changeScene;
     #endregion
 
     private void Start()
@@ -23,7 +24,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        //RespawnConRestart();
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -37,6 +38,11 @@ public class PlayerStats : MonoBehaviour
         if (other.gameObject.tag == "Res")
         {
             RespawnConRestart();
+        }
+
+        if (other.gameObject.tag == "winni")
+        {
+            changeScene.WinScene();
         }
     }
 

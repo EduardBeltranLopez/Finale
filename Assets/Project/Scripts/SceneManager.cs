@@ -17,4 +17,8 @@ public class ChangeScene : MonoBehaviour
         Application.Quit();
     }
 
+    public void WinScene()
+    {
+        SceneManager.LoadScene(2);
+    }
 }

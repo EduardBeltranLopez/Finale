@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 17868297}
   - component: {fileID: 17868296}
   - component: {fileID: 17868295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1370,7 +1370,7 @@ GameObject:
   - component: {fileID: 151857680}
   - component: {fileID: 151857679}
   - component: {fileID: 151857678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1981,7 +1981,7 @@ GameObject:
   - component: {fileID: 204875339}
   - component: {fileID: 204875338}
   - component: {fileID: 204875337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2152,7 +2152,7 @@ GameObject:
   - component: {fileID: 223625237}
   - component: {fileID: 223625236}
   - component: {fileID: 223625235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2257,7 +2257,7 @@ GameObject:
   - component: {fileID: 224759394}
   - component: {fileID: 224759393}
   - component: {fileID: 224759392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2362,7 +2362,7 @@ GameObject:
   - component: {fileID: 226091860}
   - component: {fileID: 226091859}
   - component: {fileID: 226091858}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2736,7 +2736,7 @@ GameObject:
   - component: {fileID: 319898387}
   - component: {fileID: 319898386}
   - component: {fileID: 319898385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3231,8 +3231,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 349730006}
+  - component: {fileID: 349730007}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3253,6 +3254,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349730007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349730005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb5530308e9081448c858f738a4b3e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &358303446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3331,7 +3344,10 @@ PrefabInstance:
     - {fileID: 141270332232018601, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
     - {fileID: 3738992972711280958, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6396544737902349172, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1358406777}
   m_SourcePrefab: {fileID: 100100000, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
 --- !u!4 &358303447 stripped
 Transform:
@@ -3463,7 +3479,7 @@ GameObject:
   - component: {fileID: 379079368}
   - component: {fileID: 379079367}
   - component: {fileID: 379079366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3905,7 +3921,7 @@ GameObject:
   - component: {fileID: 397229106}
   - component: {fileID: 397229105}
   - component: {fileID: 397229104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4092,7 +4108,7 @@ GameObject:
   - component: {fileID: 404926734}
   - component: {fileID: 404926733}
   - component: {fileID: 404926732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4194,7 +4210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415406194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camino (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4232,13 +4248,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428506719}
+  - component: {fileID: 428506720}
   m_Layer: 5
   m_Name: --Inventario--
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &428506719
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4257,9 +4274,30 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -7, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &428506720
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428506718}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c47dcfa96b1d84049b2e4e0b753181c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &429039931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,7 +4310,7 @@ GameObject:
   - component: {fileID: 429039935}
   - component: {fileID: 429039934}
   - component: {fileID: 429039933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4377,7 +4415,7 @@ GameObject:
   - component: {fileID: 433146018}
   - component: {fileID: 433146017}
   - component: {fileID: 433146016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4569,7 +4607,7 @@ GameObject:
   - component: {fileID: 455097903}
   - component: {fileID: 455097902}
   - component: {fileID: 455097901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5018,7 +5056,10 @@ PrefabInstance:
     - {fileID: 8827502451653784449, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
     - {fileID: 5212876112816951276, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1015050545571224288, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1858172551}
   m_SourcePrefab: {fileID: 100100000, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
 --- !u!4 &479480168 stripped
 Transform:
@@ -5115,7 +5156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 508483827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camino (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5539,7 +5580,7 @@ GameObject:
   - component: {fileID: 553271515}
   - component: {fileID: 553271514}
   - component: {fileID: 553271513}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5644,7 +5685,7 @@ GameObject:
   - component: {fileID: 555163593}
   - component: {fileID: 555163592}
   - component: {fileID: 555163591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5891,7 +5932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &608989281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6071,7 +6112,7 @@ GameObject:
   - component: {fileID: 614903582}
   - component: {fileID: 614903581}
   - component: {fileID: 614903580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6185,6 +6226,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3243951903709896420, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: changeScene
+      value: 
+      objectReference: {fileID: 349730007}
+    - target: {fileID: 3243951903709896420, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: onScreenDamage.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -6259,6 +6304,10 @@ PrefabInstance:
     - target: {fileID: 6914042347473881644, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: lookDown
       value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6914042347473881644, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
+      propertyPath: moveSpeed
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6914042347473881644, guid: bc1960ac338b8ab4f8dc13c3ab0fc9df, type: 3}
       propertyPath: lookUpStand
@@ -6471,7 +6520,7 @@ GameObject:
   - component: {fileID: 668112316}
   - component: {fileID: 668112315}
   - component: {fileID: 668112314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6576,7 +6625,7 @@ GameObject:
   - component: {fileID: 675714933}
   - component: {fileID: 675714932}
   - component: {fileID: 675714931}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6787,7 +6836,7 @@ GameObject:
   - component: {fileID: 685086389}
   - component: {fileID: 685086388}
   - component: {fileID: 685086387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6923,7 +6972,7 @@ GameObject:
   - component: {fileID: 695616551}
   - component: {fileID: 695616550}
   - component: {fileID: 695616549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7276,7 +7325,7 @@ GameObject:
   - component: {fileID: 724236687}
   - component: {fileID: 724236686}
   - component: {fileID: 724236685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7518,7 +7567,7 @@ GameObject:
   - component: {fileID: 732697748}
   - component: {fileID: 732697747}
   - component: {fileID: 732697746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7623,7 +7672,7 @@ GameObject:
   - component: {fileID: 734356102}
   - component: {fileID: 734356101}
   - component: {fileID: 734356100}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8160,7 +8209,7 @@ GameObject:
   - component: {fileID: 791160242}
   - component: {fileID: 791160241}
   - component: {fileID: 791160240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8344,7 +8393,7 @@ GameObject:
   - component: {fileID: 807380913}
   - component: {fileID: 807380912}
   - component: {fileID: 807380911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8816,7 +8865,7 @@ GameObject:
   - component: {fileID: 821177768}
   - component: {fileID: 821177767}
   - component: {fileID: 821177766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9409,7 +9458,7 @@ GameObject:
   - component: {fileID: 878089525}
   - component: {fileID: 878089524}
   - component: {fileID: 878089523}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9514,7 +9563,7 @@ GameObject:
   - component: {fileID: 887876220}
   - component: {fileID: 887876219}
   - component: {fileID: 887876218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9830,7 +9879,7 @@ GameObject:
   - component: {fileID: 919463886}
   - component: {fileID: 919463885}
   - component: {fileID: 919463884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10782,7 +10831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1001887029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10901,7 +10950,7 @@ GameObject:
   - component: {fileID: 1008543546}
   - component: {fileID: 1008543545}
   - component: {fileID: 1008543544}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11314,7 +11363,7 @@ GameObject:
   - component: {fileID: 1079651479}
   - component: {fileID: 1079651478}
   - component: {fileID: 1079651477}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11419,7 +11468,7 @@ GameObject:
   - component: {fileID: 1080332166}
   - component: {fileID: 1080332165}
   - component: {fileID: 1080332164}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11524,7 +11573,7 @@ GameObject:
   - component: {fileID: 1080445611}
   - component: {fileID: 1080445610}
   - component: {fileID: 1080445609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11806,7 +11855,7 @@ GameObject:
   - component: {fileID: 1090230620}
   - component: {fileID: 1090230619}
   - component: {fileID: 1090230618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12014,7 +12063,7 @@ GameObject:
   - component: {fileID: 1107429612}
   - component: {fileID: 1107429611}
   - component: {fileID: 1107429610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12119,7 +12168,7 @@ GameObject:
   - component: {fileID: 1108667812}
   - component: {fileID: 1108667811}
   - component: {fileID: 1108667810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12669,7 +12718,7 @@ GameObject:
   - component: {fileID: 1153789501}
   - component: {fileID: 1153789500}
   - component: {fileID: 1153789499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12888,7 +12937,7 @@ GameObject:
   - component: {fileID: 1196024309}
   - component: {fileID: 1196024308}
   - component: {fileID: 1196024307}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13445,7 +13494,7 @@ GameObject:
   - component: {fileID: 1275459208}
   - component: {fileID: 1275459207}
   - component: {fileID: 1275459206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14192,7 +14241,10 @@ PrefabInstance:
     - {fileID: 8827502451653784449, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
     - {fileID: 5212876112816951276, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5294972020721213847, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1705420432}
   m_SourcePrefab: {fileID: 100100000, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
 --- !u!4 &1346510602 stripped
 Transform:
@@ -14211,7 +14263,7 @@ GameObject:
   - component: {fileID: 1348738414}
   - component: {fileID: 1348738413}
   - component: {fileID: 1348738412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14304,6 +14356,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348738410}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1358406772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6396544737902349172, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
+  m_PrefabInstance: {fileID: 358303446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1358406777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358406772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b9fb7fdb69343e47821ab7fd05bfdc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollideWith:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1358406777}
+        m_TargetAssemblyTypeName: GamePlay.Throwable, Assembly-CSharp
+        m_MethodName: MakeADangerousSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  destroyOnCollide: 0
+  gizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  rangeSound: 40
 --- !u!1001 &1377817509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14679,7 +14769,7 @@ GameObject:
   - component: {fileID: 1403945384}
   - component: {fileID: 1403945383}
   - component: {fileID: 1403945382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14786,7 +14876,7 @@ GameObject:
   - component: {fileID: 1404553228}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: winni
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14889,7 +14979,7 @@ GameObject:
   - component: {fileID: 1406233089}
   - component: {fileID: 1406233088}
   - component: {fileID: 1406233087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15542,7 +15632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1477470514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15583,7 +15673,7 @@ GameObject:
   - component: {fileID: 1493912719}
   - component: {fileID: 1493912718}
   - component: {fileID: 1493912717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15961,7 +16051,7 @@ GameObject:
   - component: {fileID: 1500226423}
   - component: {fileID: 1500226422}
   - component: {fileID: 1500226421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16755,7 +16845,7 @@ GameObject:
   - component: {fileID: 1579263911}
   - component: {fileID: 1579263910}
   - component: {fileID: 1579263909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16970,7 +17060,7 @@ GameObject:
   - component: {fileID: 1595679804}
   - component: {fileID: 1595679803}
   - component: {fileID: 1595679802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17412,7 +17502,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613776758}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.8602975, z: 0.5097924, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 3.0651, z: 1}
   m_ConstrainProportionsScale: 0
@@ -17425,7 +17515,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -355}
+  m_AnchoredPosition: {x: -0, y: 0}
   m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1613776760
@@ -17539,7 +17629,7 @@ GameObject:
   - component: {fileID: 1618789539}
   - component: {fileID: 1618789538}
   - component: {fileID: 1618789537}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17668,7 +17758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1623902051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paredes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17707,7 +17797,7 @@ GameObject:
   - component: {fileID: 1642880444}
   - component: {fileID: 1642880443}
   - component: {fileID: 1642880442}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18290,7 +18380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1678188488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Parque
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18528,7 +18618,7 @@ GameObject:
   - component: {fileID: 1688355541}
   - component: {fileID: 1688355540}
   - component: {fileID: 1688355539}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18791,6 +18881,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3828068470096251881, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
   m_PrefabInstance: {fileID: 1704594218}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1705420427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5294972020721213847, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
+  m_PrefabInstance: {fileID: 1346510601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1705420432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705420427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b9fb7fdb69343e47821ab7fd05bfdc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollideWith:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1705420432}
+        m_TargetAssemblyTypeName: GamePlay.Throwable, Assembly-CSharp
+        m_MethodName: MakeADangerousSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  destroyOnCollide: 0
+  gizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  rangeSound: 40
 --- !u!1001 &1709713686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19145,7 +19273,7 @@ GameObject:
   - component: {fileID: 1751406187}
   - component: {fileID: 1751406186}
   - component: {fileID: 1751406185}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19767,7 +19895,7 @@ GameObject:
   - component: {fileID: 1800924668}
   - component: {fileID: 1800924667}
   - component: {fileID: 1800924666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20377,6 +20505,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1081766662376476618, guid: d6242fa859fbb5444a4ef81aad4d991a, type: 3}
   m_PrefabInstance: {fileID: 1838959532}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1858172546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1015050545571224288, guid: 8f405fcc79aad6442b9dcccaca5d5d4e, type: 3}
+  m_PrefabInstance: {fileID: 479480167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1858172551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858172546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b9fb7fdb69343e47821ab7fd05bfdc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollideWith:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1858172551}
+        m_TargetAssemblyTypeName: GamePlay.Throwable, Assembly-CSharp
+        m_MethodName: MakeADangerousSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  destroyOnCollide: 0
+  gizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  rangeSound: 40
 --- !u!1001 &1863621067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20587,7 +20753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1883060331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camino (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21127,7 +21293,7 @@ GameObject:
   - component: {fileID: 1913658707}
   - component: {fileID: 1913658706}
   - component: {fileID: 1913658705}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorGravel (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22137,7 +22303,7 @@ GameObject:
   - component: {fileID: 1997547937}
   - component: {fileID: 1997547936}
   - component: {fileID: 1997547935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22345,7 +22511,7 @@ GameObject:
   - component: {fileID: 2002821778}
   - component: {fileID: 2002821777}
   - component: {fileID: 2002821776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22544,7 +22710,7 @@ GameObject:
   - component: {fileID: 2029193456}
   - component: {fileID: 2029193455}
   - component: {fileID: 2029193454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22676,7 +22842,7 @@ GameObject:
   - component: {fileID: 2050456728}
   - component: {fileID: 2050456727}
   - component: {fileID: 2050456726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23062,7 +23228,7 @@ GameObject:
   - component: {fileID: 2074103534}
   - component: {fileID: 2074103533}
   - component: {fileID: 2074103532}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23559,7 +23725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2111538406}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ----BoxFloor----
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23597,7 +23763,7 @@ GameObject:
   - component: {fileID: 2116304807}
   - component: {fileID: 2116304806}
   - component: {fileID: 2116304805}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23699,7 +23865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2117384279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gravel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -314,7 +314,7 @@ MonoBehaviour:
         m_CallState: 2
   collisionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 383
   destroyOnCollide: 0
   gizmoColor: {r: 0, g: 0.4995098, b: 1, a: 1}
   rangeSound: 20

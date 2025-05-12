@@ -12,6 +12,9 @@ public class FunctionalAdult : MonoBehaviour, IHear
     [SerializeField, Tooltip("How far away, in meters, the agent will run from danger.")]
     private float displacementFromDanger = 10f;
 
+    [SerializeField] bool isEnemy;
+    [SerializeField] bool isCitydent;
+
     void Awake()
     {
         if (agent == null && !TryGetComponent(out agent))
@@ -24,9 +27,20 @@ public class FunctionalAdult : MonoBehaviour, IHear
     public void RespondToSound(Sound sound)
     {
 
-        if (sound.soundType == Sound.SoundType.Interesting)
+        if (sound.soundType == Sound.SoundType.Interesting && isEnemy == true)
             MoveTo(sound.pos);
         else if (sound.soundType == Sound.SoundType.Dangerous) 
+        {
+            Vector3 dir = (sound.pos - transform.position).normalized;
+            MoveTo(transform.position - (dir * displacementFromDanger));
+        }
+
+        if (sound.soundType == Sound.SoundType.Interesting && isCitydent == true)
+        {
+            Vector3 dir = (sound.pos - transform.position).normalized;
+            MoveTo(transform.position - (dir * displacementFromDanger));
+        }
+        else if (sound.soundType == Sound.SoundType.Dangerous)
         {
             Vector3 dir = (sound.pos - transform.position).normalized;
             MoveTo(transform.position - (dir * displacementFromDanger));

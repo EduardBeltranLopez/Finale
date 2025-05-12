@@ -32,7 +32,7 @@ public class CuchilloManagement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I) && abierto == false)
         {
             abierto = true;
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             carcasa.SetActive(true);
 
 
@@ -42,7 +42,7 @@ public class CuchilloManagement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && abierto == true)
         {
             abierto = false;
-            Time.timeScale = 1;
+            //Time.timeScale = 1;
             carcasa.SetActive(false);
         }
     }
