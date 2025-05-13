@@ -287,7 +287,7 @@ MonoBehaviour:
   waitTimeBetweenShoot: 2
   timer: 0
   speedBullet: 200
-  enemyBulletPrefab: {fileID: 8129554063697890826, guid: 2ac384aeb3c14c24ead336fcb97918a2, type: 3}
+  enemyBulletPrefab: {fileID: 3284795163215983265, guid: 8205dd3000a8ce840a02e9f6fd43d350, type: 3}
   shootPointEnemy: {fileID: 2934377559153565639}
 --- !u!1 &3416506238046414900
 GameObject:
